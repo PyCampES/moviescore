@@ -3,6 +3,7 @@ Babel is required.
 """
 
 import logging
+import os
 
 from aiogram import Bot, Dispatcher, executor, md, types
 from tmdbv3api import TMDb
@@ -41,7 +42,7 @@ async def search(message: types.Message):
     This handler will be called when user sends `/start` or `/hep` command.
     """
     tmdb = TMDb()
-    tmdb.api_key = "a2667dd5ff71bff85cf58d058f307b34"
+    tmdb.api_key = os.getenv("TMDB_API_KEY")
 
     movie_name = message["text"][8:]
     movie = Movie()

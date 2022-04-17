@@ -1,6 +1,12 @@
 # moviescore
 Un server que habla con el bot de Telegram
 
+# Requirements
+
+```
+pip install -r requirements.txt
+```
+
 # How to use?
 
 Install virtualenv and dependecies.
@@ -24,6 +30,9 @@ key:
 ```
 export TELEGRAM_BOT_KEY={YOUR_KEY}
 ```
+
+```
+export TMDB_API_KEY={YOUR_KEY}
 
 ```
 python my_bot.py
