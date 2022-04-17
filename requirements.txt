@@ -1,2 +1,4 @@
-requests
-python-telegram-bot
+requests==2.27.1
+aiogram==2.20
+tmdbv3api==0.4
+python-telegram-bot==13.11
